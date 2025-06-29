@@ -61,7 +61,7 @@ Also, for some reason for LLaVA based models, you need to use an old version of 
 
 ![image](https://github.com/user-attachments/assets/a5ea8760-66cf-4c37-81d4-a5a79f338684)
 
-* in the PathGen-LLaVA paper the reported accuracy is quite low (~0.61) but I got different results. 
+* in the PathGen-LLaVA paper the reported accuracy is quite low (~60.1) but I got different results. 
 
 # Thanks
 A huge shoutout to @jacklishufan et al for [LaViDa]() and answering all my stupid questions, @superjamessyx et al for [PathGen](https://github.com/PathFoundation/PathGen-1.6M) and [PathMMU](https://github.com/PathMMU-Benchmark/PathMMU) and my Boss Anant for all the support and guidance.
