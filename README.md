@@ -1,6 +1,8 @@
 # LaViDa-Pathgen 
 World's First Diffusion Model based Visual Language Model for Pathology based on LaViDa, trained on PathGen-1.6M dataset and finetuned on PathGen-Instruct datasets.
 
+![LaViDa-PathGen Animation](image_text_animation.gif)
+
 # Dataset:
 Download [GDC client](https://gdc.cancer.gov/access-data/gdc-data-transfer-tool). Download the required WSI using [download_wsi_using_gdc_client.sh](https://github.com/Himanshunitrr/LaViDa-PathGen/blob/main/curate_dataset_from_scratch/download_wsi_using_gdc_client.sh).
  Download the [PathGen-1.6M.json](https://huggingface.co/datasets/jamessyx/PathGen/tree/main) which has wsi id, position and captions, once you have the WSIs, use [create_img_txt_pairs_for_pathgen.py](https://github.com/Himanshunitrr/LaViDa-PathGen/blob/main/curate_dataset_from_scratch/create_img_txt_pairs_for_pathgen.py) to create image-text pairs.  
@@ -33,9 +35,11 @@ pip install trl==0.17.0
 IMG_PATH is the path to the images
 DATA_PATH is the path to the stage-1 dataset (json file)
 
+You can view the wandb.ai log for this stage at [this link](https://wandb.ai/himanshu_nitrr/huggingface/reports/Stage-1-training--VmlldzoxMzM4OTg4Nw?accessToken=jztmj7d8pxo5k00yr081pmon77iflc55cu9o4kscb7h32t7uubx9yenh7o8kjhg4)
+
 ```
 
-scripts/train/exps/cluster/pretrain_llada.sh
+LaViDa-PathGen/LaViDa/scripts/train/exps/cluster/pretrain_llada.sh
 ```
 
 ### Stage 2 Finetuning
@@ -44,8 +48,10 @@ For Stage 2 finetuning, you will need mm_projector.bin which you will get from S
 IMG_PATH is the path to the images
 DATA_PATH is the path to the stage-2 dataset (json file)
 
+You can view the wandb.ai log for this stage at [this link](https://api.wandb.ai/links/himanshu_nitrr/28w44nmw)
+
 ```
-scripts/train/exps/cluster/llada-hd-llada-s2.sh
+LaViDa-PathGen/LaViDa/scripts/train/exps/cluster/llada-hd-llada-s2.sh
 
 ```
 # Evaluation
@@ -64,7 +70,7 @@ Also, for some reason for LLaVA based models, you need to use an old version of 
 * in the PathGen-LLaVA paper the reported accuracy is quite low (~60.1) but I got different results. 
 
 # Thanks
-A huge shoutout to @jacklishufan et al for [LaViDa]() and answering all my stupid questions, @superjamessyx et al for [PathGen](https://github.com/PathFoundation/PathGen-1.6M) and [PathMMU](https://github.com/PathMMU-Benchmark/PathMMU) and my Boss Anant for all the support and guidance.
+A huge shoutout to @jacklishufan et al for [LaViDa](https://github.com/jacklishufan/LaViDa/tree/main) and answering all my stupid questions, @superjamessyx et al for [PathGen](https://github.com/PathFoundation/PathGen-1.6M) and [PathMMU](https://github.com/PathMMU-Benchmark/PathMMU) and my Boss Anant for all the support and guidance.
 
 
 
