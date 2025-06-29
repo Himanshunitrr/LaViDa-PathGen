@@ -1,0 +1,35 @@
+datasets:
+  - name: mix1M
+    json_path: data/Open-LLaVA-NeXT/open-llava-next/1m-filtered.json 
+    image_root: data/Open-LLaVA-NeXT
+    sampling_strategy: all
+  - name: vqav2
+    # 443757
+    json_path: data/VQAv2_train/vqav2.json
+    image_root: data/
+    sampling_strategy: random:50000
+  - name: chartqa
+    # 39106
+    json_path: data/Open-LLaVA-NeXT/open-llava-next/chart-qa-all.json
+    image_root: data/Open-LLaVA-NeXT
+    sampling_strategy: all
+  - name: docvqa
+    # 78922
+    json_path: data/Open-LLaVA-NeXT/open-llava-next/docvqa-all.json 
+    image_root: data/Open-LLaVA-NeXT
+    sampling_strategy: random:40000
+  - name: dvqa
+    # 116159
+    json_path: data/Open-LLaVA-NeXT/open-llava-next/dvqa-all.json 
+    image_root: data/Open-LLaVA-NeXT
+    sampling_strategy: random:40000
+  - name: textvqa
+    # 34602
+    json_path: data/Open-LLaVA-NeXT/open-llava-next/textvqa-raw.json
+    image_root: data/Open-LLaVA-NeXT
+    sampling_strategy: all
+  - json_path: data/infovqa-v1/infovqa.json
+    # 10k
+    image_root: data/infovqa-v1
+    sampling_strategy: all
+    

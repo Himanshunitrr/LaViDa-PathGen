@@ -1,0 +1,6 @@
+datasets:
+  - name: mix1M
+    json_path: data/Open-LLaVA-NeXT/open-llava-next/1m-filtered.json 
+    image_root: data/Open-LLaVA-NeXT
+    sampling_strategy: all
+  # the actual number of data can be controlled by max_step in training script

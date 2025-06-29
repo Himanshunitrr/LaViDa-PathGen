@@ -1,0 +1,4 @@
+[download]
+dir = pathgen_output
+http_chunk_size = 2048
+retry_amount = 6
