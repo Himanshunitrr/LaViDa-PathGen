@@ -44,8 +44,10 @@ scripts/train/exps/cluster/llada-hd-dream-s2.sh
 PathMMU
 
 
-![image](https://github.com/user-attachments/assets/1f16869f-d240-4f0c-876f-defe22d3ccd9)
-![image](https://github.com/user-attachments/assets/af9ab674-4ac9-4c79-ab94-7db9312fd4f4)
+![image](https://github.com/user-attachments/assets/ea7c4e08-4738-4590-96a1-d752714d9993)
+
+![image](https://github.com/user-attachments/assets/a5ea8760-66cf-4c37-81d4-a5a79f338684)
+
 
 
 # Thanks
